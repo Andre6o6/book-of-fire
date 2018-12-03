@@ -1,0 +1,435 @@
+fileFormatVersion: 2
+guid: 1c3f012b57e2e4f4a9466dadab5e4966
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: hero1_body
+    21300002: hero1_hand1
+    21300004: hero1_hand2
+    21300006: hero1_leg1
+    21300008: hero1_leg4
+    21300010: hero1_legs0
+    21300012: hero1_leg3
+    21300014: hero1_leg2
+    21300016: hero1_hand1_knife
+    21300018: hero1_hand1_knife2
+    21300020: hero1_hand1_hit1
+    21300022: hero1_hand1_hit0
+    21300024: hero1_hand2_book0
+    21300026: hero1_0
+    21300028: hero1_1
+    21300030: hero1_2
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hero1_body
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12
+        width: 65
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0015c1d5f49a07b40a7a6ed0605a69bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero1_hand1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 58
+        width: 23
+        height: 44
+      alignment: 9
+      pivot: {x: 0.7990597, y: 0.8867025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f04db325a74ab43ac2a8564fffc3b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero1_hand2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 58
+        width: 25
+        height: 44
+      alignment: 9
+      pivot: {x: 0.16694213, y: 0.89493006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e17cae0bf3afe4da2a12105e2347e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero1_leg1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 0
+        width: 52
+        height: 53
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8551886}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b00fbe0ba8658c4ea0a227e317df95b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero1_leg4
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 0
+        width: 62
+        height: 53
+      alignment: 9
+      pivot: {x: 0.4941608, y: 0.8142053}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3831abab7f2f58840a961b1616802052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero1_legs0
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 58
+        width: 52
+        height: 53
+      alignment: 9
+      pivot: {x: 0.5, y: 0.83469707}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc8e13803cfd3c84daf99beee58c5dee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero1_leg3
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 56
+        height: 53
+      alignment: 9
+      pivot: {x: 0.47414207, y: 0.8415275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c405eae66631d74d96f13a5bb25d26f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero1_leg2
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 0
+        width: 52
+        height: 53
+      alignment: 9
+      pivot: {x: 0.51392424, y: 0.83469695}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986d45403abc3334fb96646f29a3fe16
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero1_hand1_knife
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 53
+        width: 42
+        height: 51
+      alignment: 9
+      pivot: {x: 0.8792583, y: 0.79813355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eadf1782bf1ca2489a4a8f0424cf356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero1_hand1_knife2
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 53
+        width: 60
+        height: 50
+      alignment: 9
+      pivot: {x: 0.48793283, y: 0.9054619}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61cefc9711121a64cbd778053ba4e15c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero1_hand1_hit1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111
+        width: 157
+        height: 41
+      alignment: 9
+      pivot: {x: 0.1572524, y: 0.68542445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0decb0e39a005f44fb54ab8557cd770d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero1_hand1_hit0
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 110
+        width: 67
+        height: 27
+      alignment: 9
+      pivot: {x: 0.100158006, y: 0.4731835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec7029c906e7c549941ac266035f57b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero1_hand2_book0
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 103
+        width: 37
+        height: 49
+      alignment: 9
+      pivot: {x: 0.29452968, y: 0.91373646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc4b789bf112734bb665f842a3aeaee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero1_0
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 48
+        width: 40
+        height: 95
+      alignment: 9
+      pivot: {x: 0.1252037, y: 0.04629886}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e639f1ea4df756409667728886353b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero1_1
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 47
+        width: 44
+        height: 99
+      alignment: 9
+      pivot: {x: 0.10603749, y: 0.059898067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e742644401c8bfb4fbcfef027dd40a21
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero1_2
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 4
+        width: 49
+        height: 39
+      alignment: 9
+      pivot: {x: 0.12711568, y: 0.63213944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad047d01d77f544abe3ef132bf18072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: cc2084c1d6181d445a136048ac687a48
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
