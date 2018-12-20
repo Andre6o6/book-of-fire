@@ -8,19 +8,8 @@ public class Health : MonoBehaviour {
     public float maxHealth;
     public float health;
 
-    public UnityEngine.UI.Slider healthBar;
-    public UnityEngine.UI.Slider preHealth;
-
-    [HideInInspector]   public float expectedDamage;
-
     bool canGetDamage = true;
     public float recoverTime;
-
-    public float timeToHeal;
-    float healTime = 0;
-
-    public float healSphereRadius = 2;
-    public float healPerCorpse = 10;
 
     public GameObject corpse;
     public Action OnDeath;
@@ -30,58 +19,6 @@ public class Health : MonoBehaviour {
     private void Awake()
     {
         sprite = GetComponentInChildren<SpriteRenderer>();
-    }
-
-    private void Start()
-    {
-        if (healthBar != null)
-            healthBar.value = Mathf.Max(health, 0) / maxHealth;
-    }
-
-    private void Update()
-    {
-        if (preHealth != null)
-            preHealth.value = Mathf.Max(health - expectedDamage, 0) / maxHealth;
-
-        float target = Mathf.Max(health, 0) / maxHealth;
-        if (healthBar != null)
-            healthBar.value = Mathf.SmoothStep(healthBar.value, target, 0.1f);
-    }
-
-    // HEALING
-    public void HealCharge()
-    {
-        healTime += Time.deltaTime;
-
-        if (healTime >= timeToHeal)
-        {
-            healTime = 0;
-            Heal();
-        }
-    }
-
-    public void HealReset()
-    {
-        healTime = 0;
-    }
-
-    public void Heal()
-    {
-        float hp = 0;
-
-        var cols = Physics2D.OverlapCircleAll(transform.position, healSphereRadius);
-        foreach (var col in cols)
-        {
-            if (col.tag == "Corpse")
-            {
-                hp += healPerCorpse;
-                Destroy(col.gameObject);
-            }
-        }
-
-        health += hp;
-        if (health > maxHealth)
-            health = maxHealth;
     }
 
     //GETTING DAMAGE
@@ -132,12 +69,6 @@ public class Health : MonoBehaviour {
 
     private void Die()
     {
-        if (preHealth != null)
-            preHealth.value = 0;
-
-        if (healthBar != null)
-            healthBar.value = 0;
-
         if (this.gameObject.tag != "Player")
             Destroy(gameObject);
         else

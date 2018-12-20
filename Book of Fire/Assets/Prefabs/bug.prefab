@@ -200,6 +200,7 @@ MonoBehaviour:
   collisionMask:
     serializedVersion: 2
     m_Bits: 0
+  verticalOffset: 0
 --- !u!114 &114940791439283202
 MonoBehaviour:
   m_ObjectHideFlags: 1

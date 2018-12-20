@@ -24,14 +24,14 @@ public class Door : MonoBehaviour {
             sprite.color = new Color(1, 1, 1, Mathf.SmoothStep(sprite.color.a, 1, 0.1f));
             anim.SetTrigger("on");
             active = true;
-            player.hp.expectedDamage = price;
+            player.hpBar.expectedDamage = price;
         }
         else
         {
             sprite.color = new Color(1, 1, 1, Mathf.SmoothStep(sprite.color.a, 0, 0.2f));
             anim.SetTrigger("off");
             active = false;
-            player.hp.expectedDamage = 0;
+            player.hpBar.expectedDamage = 0;
         }
 
 
@@ -39,7 +39,7 @@ public class Door : MonoBehaviour {
         {
             anim.SetTrigger("open");
             player.hp.GetDamage(price);
-            player.hp.expectedDamage = 0;
+            player.hpBar.expectedDamage = 0;
             Destroy(this);
         }
     }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollisionChecker : MonoBehaviour {
     [HideInInspector] public CapsuleCollider2D col;
     public LayerMask collisionMask;
+    public float verticalOffset;
 
     private void Awake()
     {
@@ -51,13 +52,13 @@ public class CollisionChecker : MonoBehaviour {
         float rayLength = Mathf.Abs(movementX);
 
         int rayCount = 3;
-        float raySpacing = col.bounds.size.y / (rayCount - 1);
+        float raySpacing = (col.bounds.size.y - 2 * verticalOffset) / (rayCount - 1);
 
         Vector2 rayOrigin;
         RaycastHit2D hit;
         for (int i = 0; i < rayCount; i++)
         {
-            rayOrigin = (Vector2)transform.position + new Vector2(directionX * col.bounds.extents.x, -col.bounds.extents.y);
+            rayOrigin = (Vector2)transform.position + new Vector2(directionX * col.bounds.extents.x, -col.bounds.extents.y + verticalOffset);
             rayOrigin += Vector2.up * raySpacing * i;
 
             hit = Physics2D.Raycast(rayOrigin, Vector2.right * directionX, rayLength, collisionMask);

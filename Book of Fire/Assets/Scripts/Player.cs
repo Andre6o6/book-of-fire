@@ -24,7 +24,9 @@ public class Player : MonoBehaviour {
 
     Vector2 directionalInput;
 
-    [HideInInspector]    public Health hp;
+    [HideInInspector]   public Health hp;
+    Healing healing;
+    [HideInInspector]   public HealthBar hpBar;
     Rigidbody2D rigid;
     Animator anim;
     CollisionChecker checker;
@@ -34,11 +36,12 @@ public class Player : MonoBehaviour {
     private void Awake()
     {
         hp = GetComponent<Health>();
+        healing = GetComponent<Healing>();
+        hpBar = GetComponent<HealthBar>();
+
         rigid = GetComponent<Rigidbody2D>();
         checker = GetComponent<CollisionChecker>();
         anim = GetComponent<Animator>();
-        
-        
     }
 
     private void Start()
@@ -60,11 +63,14 @@ public class Player : MonoBehaviour {
         Vector2 velocity = rigid.velocity;
         velocity.x = Mathf.SmoothDamp(velocity.x, input.x * moveSpeed * speedMlt, ref velocityXSmoothing, accelerationTime);
 
+        if (checker.CheckHorizontal(velocity.x * Time.deltaTime))
+            velocity.x = 0;
+
         grounded = checker.CheckVertical(velocity.y * Time.deltaTime);
 
         rigid.velocity = velocity;
 
-        if (grounded)
+        if (grounded)   //cut gravity
         {
             velocity.y = 0;
         }
@@ -109,7 +115,7 @@ public class Player : MonoBehaviour {
     {
         if (fireBook != null)
         {
-            hp.HealCharge();
+            healing.HealCharge();
             anim.SetBool("Heal", true);
             speedMlt = 0;
         }
@@ -118,7 +124,7 @@ public class Player : MonoBehaviour {
     {
         if (fireBook != null)
         {
-            hp.HealReset();
+            healing.HealReset();
             anim.SetBool("Heal", false);
             speedMlt = 1;
         }
@@ -127,13 +133,19 @@ public class Player : MonoBehaviour {
 
     public void GetItem(int index)
     {
-        hands[index].enabled = false;
-        hands[index + 2].enabled = true;
+        if (index < 10)
+        {
+            hands[index].enabled = false;
+            hands[index + 2].enabled = true;
 
-        if (index == 0)
-            hitController = GetComponent<HitController>();
-        else
-            fireBook = GetComponent<Magic>();
+            if (index == 0)
+                hitController = GetComponent<HitController>();
+            else
+                fireBook = GetComponent<Magic>();
+        }
+
+        if (index == 10)    //medkit
+            healing.Heal(20);
 
     }
 

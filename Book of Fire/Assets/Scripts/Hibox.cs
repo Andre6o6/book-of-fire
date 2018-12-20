@@ -8,14 +8,22 @@ public class Hibox : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.tag != "Player")
+        {
+            var hp = other.GetComponent<Health>();
+            if (hp != null)
+            {
+                hp.TryGetDamage(damage);
+            }
+        }
+
         if (other.tag == "Enemy")
         {
             Vector2 direction = (transform.position - other.transform.position).normalized;
 
             var enemy = other.GetComponent<Enemy>();
-            if (enemy != null && enemy.hp != null)
+            if (enemy != null)
             {
-                enemy.hp.TryGetDamage(damage);
                 enemy.Knockback(direction * knockbackForce);
             }
         }

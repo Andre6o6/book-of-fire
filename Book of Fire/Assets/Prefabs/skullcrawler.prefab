@@ -116,6 +116,7 @@ MonoBehaviour:
   collisionMask:
     serializedVersion: 2
     m_Bits: 256
+  verticalOffset: 0
 --- !u!114 &114229549717183082
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,6 +151,8 @@ MonoBehaviour:
   expectedDamage: 0
   recoverTime: 0.5
   timeToHeal: 0
+  healSphereRadius: 2
+  healPerCorpse: 10
   corpse: {fileID: 1876661924744070, guid: 90530c0bf61e1fe4c893fa891f587eaa, type: 2}
 --- !u!114 &114470780016495290
 MonoBehaviour:

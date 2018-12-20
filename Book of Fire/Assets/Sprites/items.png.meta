@@ -4,6 +4,7 @@ TextureImporter:
   fileIDToRecycleName:
     21300000: items_0
     21300002: items_1
+    21300004: items_2
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -94,7 +95,7 @@ TextureImporter:
         width: 33
         height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -114,13 +115,33 @@ TextureImporter:
         width: 86
         height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 8e12713cbfb43474290be3bc535a9d06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: items_2
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 3
+        width: 60
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71313838386ea0d479b43e665f5f205d
       vertices: []
       indices: 
       edges: []
