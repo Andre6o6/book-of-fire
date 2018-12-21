@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Healing : MonoBehaviour {
     Health hp;
+    public GameObject fire;
+    ParticleSystem sphereParticle;
 
     public float timeToHeal;
     float healTime = 0;
@@ -14,6 +16,7 @@ public class Healing : MonoBehaviour {
     private void Awake()
     {
         hp = GetComponent<Health>();
+        sphereParticle = GetComponent<ParticleSystem>();
     }
 
     public void HealCharge()
@@ -42,10 +45,16 @@ public class Healing : MonoBehaviour {
             if (col.tag == "Corpse")
             {
                 heal += healPerCorpse;
-                Destroy(col.gameObject);
+
+                //Burn corpse
+                col.tag = "Burning Corpse";
+                var obj = Instantiate(fire, col.transform.position, new Quaternion());
+                Destroy(obj, 2.5f);
+                Destroy(col.gameObject, 2);
             }
         }
 
+        sphereParticle.Play();
         Heal(heal);
     }
 

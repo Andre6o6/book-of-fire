@@ -44,7 +44,8 @@ public class Health : MonoBehaviour {
             return;
         }
 
-        StartCoroutine(Recover());
+        if (canGetDamage)   //if dmg wasn't forced
+            StartCoroutine(Recover());
     }
 
     private IEnumerator Recover()
@@ -63,7 +64,9 @@ public class Health : MonoBehaviour {
         }
         sprite.color = Color.white;
 
+        //if (layer != LayerMask.NameToLayer("recovering"))   //if there is no other recovering coroutine that started before 
         gameObject.layer = layer;
+
         canGetDamage = true;
     }
 
@@ -83,7 +86,8 @@ public class Health : MonoBehaviour {
         {
             var obj = (GameObject)Instantiate(corpse, transform.position, transform.rotation);
             var rigid = obj.GetComponent<Rigidbody2D>();
-            rigid.velocity = GetComponent<Rigidbody2D>().velocity;
+            if (rigid != null)
+                rigid.velocity = GetComponent<Rigidbody2D>().velocity;
         }
     }
 }

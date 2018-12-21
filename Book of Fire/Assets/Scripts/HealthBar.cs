@@ -13,6 +13,7 @@ public class HealthBar : MonoBehaviour {
     private void Awake()
     {
         hp = GetComponent<Health>();
+        hp.OnDeath += () => { healthBar.value = 0; preHealth.value = 0; };
     }
 
     private void Start()

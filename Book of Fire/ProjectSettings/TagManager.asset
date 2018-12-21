@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Corpse
   - Breakable
+  - Burning Corpse
   layers:
   - Default
   - TransparentFX

@@ -108,6 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65e776f4ce73bbf4797f393e7c9347fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fire: {fileID: 1745659957971686, guid: 19a3397583e2f4b4d8b5d36feed52133, type: 2}
   speed: 10
   damage: 20
   knockbackForce: 40
