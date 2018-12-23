@@ -66,9 +66,10 @@ public class CollisionChecker : MonoBehaviour {
             Debug.DrawRay(rayOrigin, Vector2.right * directionX, Color.red);
 
             if (hit)
+            {
                 return true;
+            }
         }
-
         return false;
     }
 }
